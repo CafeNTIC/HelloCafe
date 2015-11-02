@@ -5,5 +5,5 @@
     'use strict';
 
     angular
-        .module('HelloCafe', ['ngMaterial']);
+        .module('HelloCafe', ['ngMaterial', 'ui.router']);
 })();

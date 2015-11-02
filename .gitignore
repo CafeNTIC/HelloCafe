@@ -1,3 +1,11 @@
 .DS_Store
 www/bower_components/
-platforms/
+platforms/android/
+www/.idea/
+plugins/cordova-plugin-camera/
+plugins/cordova-plugin-crosswalk-webview/
+plugins/cordova-plugin-file/
+plugins/cordova-plugin-geolocation/
+plugins/cordova-plugin-media-capture/
+plugins/cordova-plugin-whitelist/
+plugins/cordova-sqlite-storage/

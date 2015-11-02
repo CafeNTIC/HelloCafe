@@ -1,0 +1,18 @@
+<div layout="column" class="md-padding" ng-controller="listCtrl as list">
+    <md-card ng-repeat="project in list.allDummyProjects">
+        <img src="{{ project.medias.une }}" alt="{{ project.title }}"/>
+        <md-card-content class="pt-10 pd-10">
+            <h4 class="no-margin">{{ project.title }}</h4>
+            <p class="no-margin">{{ project.desc.mini }}</p>
+        </md-card-content>
+        <md-card-footer class="no-padding-top no-padding-bottom md-actions" layout="row" layout-align="space-between center">
+            <span flex-offset-md>
+                <md-icon>speaker_notes</md-icon>
+                6
+            </span>
+            <md-button class="no-margin-left md-primary" flex-offset="66" ui-sref="details({ id: project.id})">
+                En savoir plus
+            </md-button>
+        </md-card-footer>
+    </md-card>
+</div>

@@ -1,0 +1,11 @@
+<div layout="column" class="md-padding" ng-controller="detailsCtrl as details">
+
+    <md-tabs class="bg-grey md-hue-1" md-stretch-tabs="always">
+        <md-tab ui-sref="details"><md-icon>assignments</md-icon></md-tab>
+        <md-tab ui-sref=".comments"><md-icon>question_answer</md-icon> ({{ details.dummyDetails.comments.length }})</md-tab>
+        <!--<md-tab ui-sref=".contributors"><md-icon>device_hub</md-icon> ({{ details.dummyDetails.contributors.length }})</md-tab>-->
+    </md-tabs>
+    <div layout="column" class="max-h-60">
+        <div ui-view="tabs"></div>
+    </div>
+</div>

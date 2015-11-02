@@ -1,0 +1,10 @@
+<md-list>
+    <md-list-item class="md-3-line" ng-repeat="comment in details.dummyDetails.comments">
+        <img ng-src="{{ details.getUserById(comment.userId).avatar }}"
+             alt="{{ details.getUserById(comment.userId).username }}" class="md-avatar"/>
+        <div class="md-list-item-text" layout="column">
+            <h3>{{ details.getUserById(comment.userId).username }}</h3>
+            <p>{{ comment.content }}</p>
+        </div>
+    </md-list-item>
+</md-list>
